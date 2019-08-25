@@ -1,0 +1,22 @@
+<h2> Here is the list to my wishes: </h2>
+
+<ul>
+  {{#each dataObj}}
+
+    <li>
+        <p> ID: {{id}} </p>
+        <p> Wish: {{wish}} </p>
+        <hr>
+    </li>
+  {{/each}}
+</ul>
+
+
+<div>
+  <form action="/" method="POST">
+  	<textarea type="text" name="wish"></textarea>
+
+  	<button type="submit">Submit</button>
+  </form>
+</div>
+
